@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Shoe purchase</title>
+    <link rel="stylesheet" href="lab 2 CSS Style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #222;
+            margin-top: 30px;
+        }
+        .shoe-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px auto;
+            max-width: 900px;
+        }
+        .shoe-card {
+            background: rgba(255,255,255,0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+        }
+        .shoe-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .price {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #007b3c;
+            font-weight: bold;
+        }
+        .cart-btn {
+            margin-top: 15px;
+            background-color: #007b3c;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .cart-btn:hover {
+            background-color: #005a28;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shoe Purchasing</h1>
+    <div class="shoe-grid">
+        <div class="shoe-card">
+            <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&w=600" alt="Shoe 1">
+            <div class="price">Ksh 3,500</div>
+            <button class="cart-btn" onclick="promptMpesaPin('Shoe 5', 'Ksh 2,500')">Payment</button>
+        </div>
+        <div class="shoe-card">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&w=600" alt="Shoe 2">
+            <div class="price">Ksh 1,200</div>
+            <button class="cart-btn">Payment</button>
+        </div>
+        <div class="shoe-card">
+            <img src="https://images.pexels.com/photos/267202/pexels-photo-267202.jpeg?auto=compress&w=600" alt="Shoe 3">
+            <div class="price">Ksh 1,800</div>
+            <button class="cart-btn">Payment</button>
+        </div>
+        <div class="shoe-card">
+            <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&w=600" alt="Shoe 4">
+            <div class="price">Ksh 5,000</div>
+            <button class="cart-btn">Payment</button>
+        </div>
+        <div class="shoe-card">
+            <img src="https://images.pexels.com/photos/292998/pexels-photo-292998.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Shoe 5">
+            <div class="price">Ksh 2,500</div>
+            <button class="cart-btn">Payment</button>
+        </div>
+        <div class="shoe-card">
+            <img src="https://images.pexels.com/photos/1476209/pexels-photo-1476209.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Shoe 6">
+            <div class="price">Ksh 3,200</div>
+            <button class="cart-btn">Payment</button>
+        </div>
+        <div class="shoe-card">
+            <img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Shoe 7">
+            <div class="price">Ksh 2,200</div>
+            <button class="cart-btn">Payment</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="en"> <!-- root element-->
+<head style="text-align:center" >
+    <title>Sign up</title> 
+    <h1> Sign Up </h1>
+    <h2> Fill in personal information </h2><br>
+   <link rel="stylesheet" href="lab 2 CSS Style.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body  style="text-align:center" background="https://images.pexels.com/photos/2364588/pexels-photo-2364588.jpeg?auto=compress&cs=tinysrgb&w=600";>
+    <form id="regForm" autocomplete="off">
+        <label>Username (alphabets only):</label>
+        <input type="text" id="username" name="username" required pattern="^[A-Za-z]+$">
+        <span class="error" id="userError"></span>
+
+        <label>Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span class="error" id="passError"></span>
+
+        <label>Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <span class="error" id="confirmError"></span>
+
+        <!--type - number-->
+          <label>Phone number:+254</label> 
+        <!--label element-->
+          <input type="text" name="number" placeholder="Enter your number" required><br>
+          <span class="error" id="phoneError"></span>
+
+        <label>Email:</label>
+          <input type="email" name="email" placeholder="Enter email" required ><br>
+          <span class="error" id="emailError"></span>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <span class="error" id="genderError"></span>
+
+        <br>
+         <!--type - number-->
+        <label>Account Type:</label>
+        <select id="accountType" name="accountType" required>
+            <option value="">Select...</option>
+            <option value="Adult">Adult</option>
+            <option value="Child">Child</option>
+            <option value="New born">New born</option>
+        </select><br>
+        <span class="error" id="accountError"></span>
+        <button type="submit">SIGN UP</button>
+    </form>
+
+    <script src="Signup.js"></script>
+</body>
+</html>
